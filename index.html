@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="libs/zepto.min.js"></script>
+	</head>
+	<body>
+		
+		<div id="panel" class="panel">面板</div>
+		
+		<!-- 
+			
+			Zepto是一个轻量级的针对现代高级浏览器的JavaScript库， 
+			它与jquery有着类似的api。 如果你会用jquery，那么你也会用zepto。
+		-->
+		
+		<script>
+			
+			/**
+			 * 选择器
+			 */
+			console.log($('div'))
+			console.log($('#panel'))
+			console.log($('.panel'))
+			
+			
+			/**
+			 * 样式
+			 */
+			$('div').css({ backgroundColor: '#8EE', fontSize: 28 })
+			
+			
+			/**
+			 * 节点
+			 */
+			$('div').append('<p>123</p>');
+			
+			$('p').remove();
+			
+			
+			/**
+			 * 属性
+			 */
+			$('#panel').attr('data-name','hahah')
+			
+			
+      
+		</script>
+	</body>
+</html>
